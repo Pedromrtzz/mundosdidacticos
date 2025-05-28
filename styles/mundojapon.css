@@ -1,0 +1,247 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.barra-navegacion-arriba {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.navegacion-izquierda {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-left: 1%;
+}
+
+.navegacion-izquierda a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navegacion-izquierda a:hover {
+  color: rgba(255, 0, 0, 0.494);
+  text-decoration: underline;
+  font-size: 1rem;
+}
+
+.barra-navegacion-arriba .nombre-empresa-nav {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border: 2px solid white;
+  margin-left: -15%;
+}
+
+.barra-navegacion-arriba .nombre-empresa-nav p {
+  color: white;
+}
+
+.redes-sociales-nav {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin-right: 1%;
+}
+
+.fa-brands.fa-instagram {
+  color: white;
+}
+
+.fa-brands.fa-twitter {
+  color: white;
+}
+
+.fa-brands.fa-linkedin {
+  color: white;
+}
+
+.fa-brands.fa-instagram:hover {
+  background: linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fa-brands.fa-twitter:hover {
+  background: linear-gradient(45deg, #1da1f2, #0d8ddb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fa-brands.fa-linkedin:hover {
+  background: linear-gradient(45deg, #0077b5, #005582);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fa-solid.fa-bars {
+  display: none;
+  color: white;
+}
+
+.buscador-container {
+  text-align: center;
+  margin: 20px 0;
+  margin-top: 7%;
+  margin-left: -65%;
+}
+
+#buscador {
+  padding: 10px 16px;
+  width: 80%;
+  max-width: 400px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+#buscador:focus {
+  outline: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin-top: 2%;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+  margin-bottom: 2.5%;
+}
+
+.image {
+  width: 45%;
+  height: 300px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image img {
+  width: 69%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+.divider {
+  width: 3px;
+  height: 200px;
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .barra-navegacion-arriba {
+    width: 100%;
+  }
+
+  .contenedor-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .fa-solid.fa-bars {
+    display: block;
+    position: absolute;
+    left: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .navegacion-izquierda,
+  .redes-sociales-nav,
+  .nombre-empresa-nav p {
+    display: none;
+  }
+
+  .navegacion-izquierda a:hover {
+    text-decoration: underline;
+    color: red;
+    font-size: 1.2rem;
+  }
+
+  .menu-activo {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    justify-content: center;
+    top: 0;
+    left: -3%;
+    width: 102%;
+    background-color: rgba(0, 0, 0, 0.95);
+    padding: 15px 0;
+    z-index: 999;
+    margin-top: 14%;
+  }
+
+  .menu-activo a {
+    text-decoration: none;
+    padding: 8.25px;
+    font-size: 1rem;
+    font-weight: 200;
+    text-align: center;
+  }
+
+  .menu-activo a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .buscador-container {
+    text-align: center;
+    margin: 20px 0;
+    margin-top: 20%;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+  }
+
+  .image img {
+    width: 80%;
+    height: auto;
+  }
+
+  .divider {
+    display: none;
+  }
+}
