@@ -199,7 +199,7 @@ body {
     flex-direction: column;
     position: fixed;
     justify-content: center;
-    top: 0;
+    top: -0.5%;
     left: -3%;
     width: 102%;
     background-color: rgba(0, 0, 0, 0.95);
