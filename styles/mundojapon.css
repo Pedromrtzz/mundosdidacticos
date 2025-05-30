@@ -49,8 +49,7 @@ body {
   display: flex;
   justify-content: center;
   text-align: center;
-  border: 2px solid white;
-  margin-left: -15%;
+  margin-left: -8%;
 }
 
 .barra-navegacion-arriba .nombre-empresa-nav p {

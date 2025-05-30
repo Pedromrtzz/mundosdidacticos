@@ -18,7 +18,7 @@ body {
     left: 0;
     width: 100%;
     height: 8%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.502);
     z-index: 1000;
     flex-wrap: wrap; 
     justify-content: space-between; 
@@ -39,7 +39,7 @@ body {
 }
 
 .navegacion-izquierda a:hover {
-    color: rgba(255, 0, 0, 0.494);
+    color: #ff00007e;
     text-decoration: underline;
     font-size: 1rem;
 }
@@ -48,7 +48,7 @@ body {
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-left: -15%;
+    margin-left: -8%;
 }
 
 .barra-navegacion-arriba .nombre-empresa-nav p {
