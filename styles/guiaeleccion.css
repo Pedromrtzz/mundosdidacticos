@@ -284,6 +284,8 @@ body, html {
       flex-direction: column;
       align-items: center;
       gap: 20px;
+      margin-top: 10%;
+      margin-bottom: 8%;
     }
   }
   

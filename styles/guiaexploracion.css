@@ -241,6 +241,7 @@ html {
 }
 
 @media (max-width: 768px) {
+    
   .barra-navegacion-arriba {
     width: 100%;
   }

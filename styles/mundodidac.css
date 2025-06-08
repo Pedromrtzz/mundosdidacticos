@@ -179,7 +179,7 @@ body {
 .contenedor-texto-explicativo p {
   font-size: 1rem;
   line-height: 1.5;
-  text-align: center;
+  text-align: justify;
 }
 
 .contenedor-boton {
