@@ -37,6 +37,7 @@ body {
   text-decoration: none;
   font-size: 1rem;
   transition: color 0.3s ease;
+  display: none;
 }
 
 .navegacion-izquierda a:hover {
@@ -49,11 +50,13 @@ body {
   display: flex;
   justify-content: center;
   text-align: center;
-  margin-left: -8%;
 }
 
 .barra-navegacion-arriba .nombre-empresa-nav p {
   color: white;
+  justify-content: center;
+  margin-left: -1100%;
+
 }
 
 .redes-sociales-nav {
@@ -62,6 +65,7 @@ body {
   flex-wrap: wrap;
   justify-content: flex-end;
   margin-right: 1%;
+  display: none;
 }
 
 .fa-brands.fa-instagram {
